@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio - Harithreenath Bellamkonda">
+    <meta name="keywords" content="portfolio, web development, programming, developer">
+    <title>Portfolio | Harithreenath Bellamkonda</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- 3D Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-content">
+            <svg class="loader-circle" viewBox="0 0 50 50">
+                <circle class="loader-path" cx="25" cy="25" r="20" fill="none" stroke-width="2"></circle>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="images/logo.png" alt="H3N" class="logo">
+            </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#terminal" class="nav-link">
+                <i class="fas fa-terminal"></i>
+                <span>Terminal</span>
+            </a>
+            <a href="#about" class="nav-link">
+                <i class="fas fa-user"></i>
+                <span>About</span>
+            </a>
+            <a href="#skills" class="nav-link">
+                <i class="fas fa-code"></i>
+                <span>Skills</span>
+            </a>
+            <a href="#projects" class="nav-link">
+                <i class="fas fa-project-diagram"></i>
+                <span>Projects</span>
+            </a>
+            <a href="#contact" class="nav-link">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+        <div class="nav-controls">
+            <button class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="head">
+                    <h1 id="hi">Hi! There,</h1>
+                    <h1 id="name">I'm <span>Harithreenath Bellamkonda</span></h1>
+                    <div class="wrapper">
+                        <div class="role-container">I am a <span>Computer Science Student</span></div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="resume-button">Resume</button>
+                    <button class="contactinfo-button">Contact Info</button>
+                </div>
+            </div>
+            <div class="hero-image">
+        <div class="circles-wrapper">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+            <div class="circle circle5"></div>
+            <div class="circle circle6"></div>
+            <div class="circle circle7"></div>
+            <div class="circle circle8"></div>
+            <div class="circle circle9"></div>
+            <div class="circle circle10"></div>
+                </div>
+                <img src="images/hero.png" alt="Profile" id="img1">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrows">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terminal Section -->
+    <section id="terminal" class="terminal-section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Interactive Terminal</h2>
+            <div class="section-line"></div>
+            <p class="section-description">Experience my portfolio through a command-line interface. Type 'help' to get started.</p>
+        </div>
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="terminal-button close"></span>
+                    <span class="terminal-button minimize"></span>
+                    <span class="terminal-button maximize"></span>
+                </div>
+                <div class="terminal-title">portfolio.exe</div>
+            </div>
+            <div class="terminal-body">
+                <div class="terminal-output"></div>
+                <div class="terminal-input-line">
+                    <span class="terminal-prompt">visitor@portfolio:~$</span>
+                    <input type="text" class="terminal-input" spellcheck="false" autofocus>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header" data-aos="fade-up">
+            <h2>About Me</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-image" data-aos="fade-right">
+                <div class="image-frame">
+                    <img src="images/hari pic.jpg" alt="About Image">
+                </div>
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <h3>Who am I?</h3>
+                <p>Hello! I'm Harithreenath Bellamkonda, a passionate Computer Science Student with a knack for turning ideas into reality. With expertise in coding and web development, I thrive on challenges and love creating solutions that make a difference.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">Always</span>
+                        <span class="stat-label">Learning</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Dedication</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Learning Spirit</span>
+                    </div>
+                </div>
+                <div class="about-cta">
+                    <a href="https://drive.google.com/file/d/1DtzIsWmpySmvKPx0y7_byffdj2GVN4Vb/view?usp=sharing" class="btn primary" target="_blank">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-header" data-aos="fade-up">
+            <h2>My Skills</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skills-category" data-aos="fade-up">
+                <h3>Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="zoom-in">
+                        <div class="skill-icon">
+                            <img src="images/python logo.png" alt="Python">
+                        </div>
+                        <div class="skill-info">
+                            <h4>Python</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                            <div class="skill-percent">85%</div>
+                            <span class="skill-level">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in">
+                        <div class="skill-icon">
+                            <img src="images/java logo.jpg" alt="Java">
+                        </div>
+                        <div class="skill-info">
+                            <h4>Java</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                            <div class="skill-percent">75%</div>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-aos="zoom-in">
+                        <div class="skill-icon">
+                            <img src="images/c programming logo.jpeg" alt="C">
+                        </div>
+                        <div class="skill-info">
+                            <h4>C Programming</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                            <div class="skill-percent">70%</div>
+                            <span class="skill-level">Intermediate</span>
+                  </div>
+              </div>
+                  </div>
+              </div>
+
+            <div class="skills-category" data-aos="fade-up">
+                <h3>Web Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="zoom-in">
+                        <div class="skill-icon">
+                            <img src="images/HTML logo.png" alt="HTML5">
+                        </div>
+                        <div class="skill-info">
+                            <h4>HTML5</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                            <div class="skill-percent">90%</div>
+                            <span class="skill-level">Advanced</span>
+                  </div>
+              </div>
+                    <div class="skill-card" data-aos="zoom-in">
+                        <div class="skill-icon">
+                            <img src="images/css logo.png" alt="CSS3">
+                        </div>
+                        <div class="skill-info">
+                            <h4>CSS3</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                            <div class="skill-percent">85%</div>
+                            <span class="skill-level">Advanced</span>
+                  </div>
+              </div>
+                    <div class="skill-card" data-aos="zoom-in">
+                        <div class="skill-icon">
+                            <img src="images/js logo.png" alt="JavaScript">
+                        </div>
+                        <div class="skill-info">
+                            <h4>JavaScript</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                            <div class="skill-percent">80%</div>
+                            <span class="skill-level">Advanced</span>
+                  </div>
+              </div>
+                  </div>
+              </div>
+
+            <div class="skills-category" data-aos="fade-up">
+                <h3>Database & Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-aos="zoom-in">
+                        <div class="skill-icon">
+                            <img src="images/mysql logo.png" alt="MySQL">
+                        </div>
+                        <div class="skill-info">
+                            <h4>MySQL</h4>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                            <div class="skill-percent">75%</div>
+                            <span class="skill-level">Intermediate</span>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section> 
+    
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-header" data-aos="fade-up">
+            <h2>My Projects</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="images/project 1.png" alt="Environmental Analysis">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" title="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-github" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Machine Learning</span>
+                    <h3>Environmental Analysis ML Project</h3>
+                    <p>This machine learning project analyzes deforestation, glacier retreat, and sea level rise, offering insights through graphical representations.</p>
+                    <div class="project-tech">
+                        <span><i class="fab fa-python"></i> Python</span>
+                        <span><i class="fas fa-brain"></i> ML</span>
+                        <span><i class="fas fa-chart-bar"></i> Data Analysis</span>
+                    </div>
+              </div>
+           </div>
+     
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="images/project 2.png" alt="Portfolio Website">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" title="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-github" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Web Development</span>
+                    <h3>Modern Portfolio Website</h3>
+                    <p>A responsive portfolio website built with modern web technologies, featuring smooth animations and interactive elements.</p>
+                    <div class="project-tech">
+                        <span><i class="fab fa-html5"></i> HTML5</span>
+                        <span><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span><i class="fab fa-js"></i> JavaScript</span>
+                    </div>
+              </div>
+           </div>
+     
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="images/project 3.png" alt="Database Management">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link" target="_blank" title="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-github" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-category">Database</span>
+                    <h3>Student Management System</h3>
+                    <p>A comprehensive student management system with MySQL database integration, featuring user authentication and data analytics.</p>
+                    <div class="project-tech">
+                        <span><i class="fas fa-database"></i> MySQL</span>
+                        <span><i class="fab fa-java"></i> Java</span>
+                        <span><i class="fas fa-shield-alt"></i> Security</span>
+                    </div>
+                </div>
+            </div>
+              </div>
+        <div class="projects-cta" data-aos="fade-up">
+            <a href="https://github.com/Hari0990" class="btn primary" target="_blank">
+                <i class="fab fa-github"></i> View More Projects
+            </a>
+        </div>
+     </section>
+     
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Get In Touch</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="item-content">
+                        <h3>Phone</h3>
+                        <p>+91 79954 01528</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="item-content">
+                        <h3>Email</h3>
+                        <p>harithreenathbellamkonda@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="item-content">
+                        <h3>Location</h3>
+                        <p>Chennai, Tamilnadu-19</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/harithreenath-bellamkonda-906665287/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Hari0990" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/thri_nath_13/?hl=en" target="_blank" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    </div>
+            </div>
+            <form class="contact-form" data-aos="fade-left">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Harithreenath Bellamkonda. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // GSAP Animations
+        gsap.registerPlugin(ScrollTrigger);
+        
+        // Loader Animation
+        window.addEventListener('load', () => {
+            gsap.to('.loader', {
+                opacity: 0,
+                duration: 0.5,
+                onComplete: () => {
+                    document.querySelector('.loader').style.display = 'none';
+                }
+            });
+        });
+
+        // Navbar Animation
+        gsap.from('.navbar', {
+            y: -100,
+            opacity: 0,
+            duration: 1,
+            delay: 0.5,
+            ease: 'power2.out',
+            onComplete: () => {
+                gsap.set('.navbar', { clearProps: 'all' }); // Clear animation properties after completion
+            }
+        });
+
+        // Hero Section Animation
+        gsap.from('.hero-content', {
+            x: -100,
+            opacity: 0,
+            duration: 1,
+            delay: 1
+        });
+
+        gsap.from('.circles-wrapper', {
+            x: 100,
+            opacity: 0,
+            duration: 1,
+            delay: 1
+        });
+
+        // Typing Animation
+        /*const textLoad = () => {
+            setTimeout(() => {
+                document.querySelector('#name').textContent = "Harithreenath Bellamkonda";
+            }, 0);
+            setTimeout(() => {
+                document.querySelector('#name').textContent = "Designer";
+            }, 4000);
+            setTimeout(() => {
+                document.querySelector('#name').textContent = "Freelancer";
+            }, 8000);
+        }
+        textLoad();
+        setInterval(textLoad, 12000);*/
+
+        // Theme Toggle
+        const themeToggle = document.querySelector('.theme-toggle');
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+        // Check for saved theme preference or use system preference
+        const currentTheme = localStorage.getItem('theme') || (prefersDarkScheme.matches ? 'dark' : 'light');
+        if (currentTheme === 'light') {
+            document.body.classList.add('light-mode');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            const theme = document.body.classList.contains('light-mode') ? 'light' : 'dark';
+            localStorage.setItem('theme', theme);
+        });
+
+        // Mobile Menu Toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Skills Animation
+        const skillBars = document.querySelectorAll('.skill-progress');
+        skillBars.forEach(bar => {
+            const progress = bar.getAttribute('data-progress');
+            ScrollTrigger.create({
+                trigger: bar,
+                start: "top 80%",
+                onEnter: () => {
+                    bar.style.width = progress + '%';
+                }
+            });
+        });
+
+        // Terminal Functionality
+        const terminal = {
+            output: document.querySelector('.terminal-output'),
+            input: document.querySelector('.terminal-input'),
+            commands: {
+                help: () => `Available commands:
+                    help - Show this help message
+                    about - Learn about me
+                    skills - View my technical skills
+                    projects - List my projects
+                    contact - Get my contact information
+                    clear - Clear the terminal
+                    github - Open my GitHub profile
+                    linkedin - Open my LinkedIn profile`,
+                about: () => `Hello! I'm Harithreenath Bellamkonda
+                    A passionate Computer Science Student
+                    Specializing in Web Development and Programming`,
+                skills: () => `Technical Skills:
+                    • Python (85%)
+                    • Java (75%)
+                    • C Programming (70%)
+                    • HTML5 (90%)
+                    • CSS3 (85%)
+                    • JavaScript (80%)
+                    • MySQL (75%)`,
+                projects: () => `Recent Projects:
+                    1. Environmental Analysis ML Project
+                    2. Modern Portfolio Website
+                    3. Student Management System
+                    Type 'project <number>' for more details`,
+                clear: () => {
+                    terminal.output.innerHTML = '';
+                    return '';
+                },
+                github: () => {
+                    window.open('https://github.com/Hari0990', '_blank');
+                    return 'Opening GitHub profile...';
+                },
+                linkedin: () => {
+                    window.open('https://www.linkedin.com/in/harithreenath-bellamkonda-906665287/', '_blank');
+                    return 'Opening LinkedIn profile...';
+                },
+                contact: () => `Contact Information:
+                    Email: harithreenathbellamkonda@gmail.com
+                    Phone: +91 79954 01528
+                    Location: Chennai, Tamilnadu-19`
+            },
+
+            execute(command) {
+                const cmd = command.toLowerCase().trim();
+                const output = document.createElement('div');
+                
+                // Add command to output
+                const commandLine = document.createElement('p');
+                commandLine.innerHTML = `<span class="terminal-prompt">visitor@portfolio:~$</span> ${command}`;
+                output.appendChild(commandLine);
+
+                // Process command
+                if (cmd === '') {
+                    // Do nothing for empty command
+                } else if (this.commands[cmd]) {
+                    const result = document.createElement('p');
+                    result.innerHTML = this.commands[cmd]().replace(/\n\s+/g, '<br>');
+                    output.appendChild(result);
+                } else if (cmd.startsWith('project ')) {
+                    const num = parseInt(cmd.split(' ')[1]);
+                    const result = document.createElement('p');
+                    result.innerHTML = this.getProjectDetails(num);
+                    output.appendChild(result);
+                } else {
+                    const error = document.createElement('p');
+                    error.className = 'error';
+                    error.textContent = `Command not found: ${cmd}. Type 'help' for available commands.`;
+                    output.appendChild(error);
+                }
+
+                this.output.appendChild(output);
+                this.output.scrollTop = this.output.scrollHeight;
+            },
+
+            getProjectDetails(num) {
+                const projects = {
+                    1: `Environmental Analysis ML Project:
+                        • Python-based machine learning project
+                        • Analyzes environmental data
+                        • Features graphical representations
+                        • Technologies: Python, ML, Data Analysis`,
+                    2: `Modern Portfolio Website:
+                        • Responsive web design
+                        • Interactive UI elements
+                        • Smooth animations
+                        • Technologies: HTML5, CSS3, JavaScript`,
+                    3: `Student Management System:
+                        • Database-driven application
+                        • User authentication
+                        • Data analytics
+                        • Technologies: MySQL, Java`
+                };
+                return projects[num] ? projects[num].replace(/\n\s+/g, '<br>') : 'Project not found';
+            },
+
+            init() {
+                // Welcome message
+                const welcome = document.createElement('p');
+                welcome.innerHTML = `Welcome to my interactive terminal!
+                    Type 'help' to see available commands.`.replace(/\n\s+/g, '<br>');
+                this.output.appendChild(welcome);
+
+                // Handle input
+                this.input.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        const command = this.input.value;
+                        this.input.value = '';
+                        this.execute(command);
+                    }
+                });
+
+                // Focus input on terminal click
+                document.querySelector('.terminal-container').addEventListener('click', () => {
+                    this.input.focus();
+                });
+            }
+        };
+
+        // Initialize terminal
+        terminal.init();
+    </script>
+    
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{};
+    Tawk_API.customStyle = {
+        zIndex: 1000,
+        position : 'left'
+    };
+    var Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/67cb651fba7abf190c262cbe/1ilp8615l';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>
+
